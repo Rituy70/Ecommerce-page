@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE ORANGE PACKAGE</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Neoterique&display=swap');
+
+    body {
+      background-color: #ffc0cb; /* Light pink background */
+      margin: 0;
+      padding: 0;
+    }
+
+    .title-container {
+      background: linear-gradient(to right, #ff7e00, #ffcc80); /* Gradient background */
+      padding: 20px;
+      text-align: center;
+    }
+
+    .title {
+      font-family: 'Neoterique', sans-serif; /* NEOTERIQUE font */
+      font-size: 36px;
+      color: #fff; /* White text color */
+      text-transform: uppercase; /* Uppercase text */
+      letter-spacing: 2px; /* Spacing between letters */
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow */
+    }
+
+    .product-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 20px;
+    }
+
+    .product-image img {
+      max-width: 300px;
+      height: auto;
+    }
+
+    .product-details {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .contact-section {
+      margin-top: 50px;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+
+    .purchase-btn {
+      padding: 10px 20px;
+      background-color: orange;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .purchase-btn:hover {
+      background-color: #ff7e00;
+    }
+
+    .description-heading {
+      color: #333; /* dark color */
+      font-size: 24px; /* bigger size */
+      margin-bottom: 10px;
+    }
+
+    .description-text {
+      color: #fff; /* medium white */
+      font-size: 18px; /* medium size */
+      line-height: 1.5; /* improved readability */
+    }
+
+    .product-info {
+      margin-top: 20px;
+    }
+
+    .product-info p {
+      margin: 5px 0;
+    }
+
+    .product-info h3 {
+      color: #333; /* dark color */
+      font-size: 20px; /* medium size */
+      margin-bottom: 5px;
+    }
+
+    .login-container,
+    .register-container,
+    .profile-container {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-container h2,
+    .register-container h2,
+    .profile-container h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="title-container">
+    <h1 class="title">THE ORANGE PACKAGE</h1>
+  </div>
+  <div class="product-container">
+    <div class="product-image">
+      <img src="D:\istockphoto-1400831765-170667a" alt="Orange juice Image"> 
+    </div>
+    <div class="product-details">
+      <h2 class="description-heading">Orange Juice - An Indian Brand</h2>
+      <p class="description-text">Indulge in the refreshing taste of our Orange Juice, handpicked from the lush orchards of India. Made from 100% pure and natural oranges, our juice is a rich source of vitamin C and antioxidants, promoting overall health and well-being.</p>
+      <p class="description-text">Whether you're starting your day with a nutritious breakfast or seeking a revitalizing beverage during the day, our Orange Juice is the perfect choice for you and your family.</p>
+      <div class="product-info">
+        <h3>Product Information:</h3>
+        <p><strong>Storage Volume:</strong> 1 liter</p>
+        <p><strong>Origin:</strong> India</p>
+        <p><strong>Ingredients:</strong> Freshly squeezed orange juice, no added preservatives or artificial flavors.</p>
+      </div>
+      <p>Price: ₹730</p>
+      <button id="purchaseBtn" class="purchase-btn">Purchase Now</button>
+    </div>
+  </div>
+  <div class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Email: info@yourcompany.com</p>
+    <p>Phone: +91 1234567890</p>
+  </div>
+  <div class="login-container">
+    <h2>Login</h2>
+    <!-- Login Form Goes Here -->
+    <form action="/login" method="post">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username"><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password"><br><br>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+  <div class="register-container">
+    <h2>Register</h2>
+    <!-- Register Form Goes Here -->
+    <form action="/register" method="post">
+      <label for="new_username">New Username:</label><br>
+      <input type="text" id="new_username" name="new_username"><br>
+      <label for="new_password">New Password:</label><br>
+      <input type="password" id="new_password" name="new_password"><br><br>
+      <input type="submit" value="Register">
+    </form>
+  </div>
+ 
+  <script>
+    document.getElementById('purchaseBtn').addEventListener('click', function() {
+      alert('Thank you for your purchase!');
+      // Here you can add logic to actually complete the purchase.
+    });
+  </script>
+</body>
+</html>
